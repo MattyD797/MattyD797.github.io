@@ -1,0 +1,615 @@
+@charset "utf-8";
+
+body{
+    background-color: #585858;
+    margin: 0px;
+    padding-bottom: 150px;
+}
+.myback {
+    min-width: 1600px;
+    position: fixed;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.keyinsights img{
+  width: 100px;
+  position: relative;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+section{
+    width: 100%;
+    height:95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-width: 100%;
+}
+section:before{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #FFFFFF;
+    position: relative;
+    padding: 0px 5%;
+    background: rgba(255, 255, 255, 01);
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    margin: 30px;
+    font-family: myriad pro regular;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    
+}
+nav ul li:before{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0%;
+    top: 0px;
+    left: 30%;
+    background-color: #000000;
+    transition: all ease-in-out 200ms;
+}
+nav ul li:hover::before{
+    width: 75%;
+    background-color: #009e28;
+}
+.name{
+    font-family: Georgia;
+    letter-spacing: 1px;
+    color:#292929;
+    font-size: 22px;
+}
+.link{
+    font-weight: bold;
+    color: #292929;
+}
+.text-container p:nth-child(1){
+    font-family:'Trebuchet MS';
+    font-weight:bold;
+    color:#ffffff;
+    font-size: 22px;
+}
+.text-container p:nth-child(2){
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #e0e0e0;
+    font-size: 60px;
+}
+.text-container p:nth-child(3){
+    font-family: myraid pro regular;
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 30px;
+}
+.text-container p{
+    line-height: 0px;
+    margin: 45px 0px 25px;
+}
+.text-container{
+    position: absolute;
+    left: 13%;
+    top: 42%;
+    transform:translate(-13%,-14%);
+    overflow: hidden;
+}
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+   
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    border: none;
+    outline: none;
+    margin: 0; /* Important for vertical align on mobile phones */
+    font-family: myriad pro regular;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: white;
+  }
+  .dropbtn:hover {
+    color: #009e28;
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    
+  }
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.content-p{
+    position: absolute;
+    left: 22%;
+    top: 50%;
+    margin:auto;
+    transform:translate(-13%,-14%);
+    overflow: hidden;
+    margin-top:10%;
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: -10px;
+    padding-left: -10px;
+}
+
+.content-p p{
+    color: black; 
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.text-container button{
+    width: 130px;
+    height: 42px;
+    border-radius: 10px;
+    font-family: 'Trebuchet MS';
+    font-weight: 14px;
+    outline:none;
+    margin: 0px 10px;
+}
+.hire-btn{
+    border:2px solid #373636;
+    color: #373636;
+    font-weight: bold;
+}
+.hire-btn:hover{
+    background-color: #009e28;
+}
+.down-cv{
+    background-color: #0b0b0b;
+    color:#FFFFFF;
+    border: none;
+}
+.down-cv:hover{
+    background-color: #009e28;
+}
+button:active{
+    transform: scale(1.25);
+}
+.profile{
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+    top: 70px;
+    bottom: 20px;
+    left: 65%;
+    transform: translateX(-70%);
+}
+
+.about-container img{
+    width: 400px;
+    left: 30%;
+    top: 20px;
+}
+.about-text{
+    width: 500px;
+}
+.about-text p:nth-child(1){
+    color:#403e3e;
+    font-family: myraid pro;
+    font-weight:bold;
+    font-size: 28px;
+    line-height: 0px;
+}
+.about-text p:nth-child(2){
+    color:#3e3d3d;
+    font-family: myraid pro;
+    font-weight:bold;
+    font-size: 16px;
+    line-height: 5px;
+}
+.about-text p:nth-child(3),
+.about-text p:nth-child(4),
+.about-text p:nth-child(5){
+    color:#2f2f2f;
+    font-family: calibri;
+    font-size: 16px;
+}
+.about-text button{
+    width: 120px;
+    height: 40px;
+    color:#FFFFFF;
+    outline: none;
+    border:none;
+    font-family: calibri;
+    font-size: 16px;
+    background-color: #000000;
+}
+.about-container{
+    width: 1000px;
+    height: 400px;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin: -7% auto 20px auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.key-container{
+    width: 1000px;
+    height: 400px;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin: -7% auto 20px auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.key-container img{
+    width: 450px;
+    left: 30%;
+    top: 10px;
+}
+
+.leadership-container{
+    width: 1000px;
+    height: 400px;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin: -7% auto 20px auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.leadership-container img{
+    width: 250px;
+    left: 30%;
+    top: 10px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    top:100px;
+    
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: #009e28;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #131212;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    margin-top: 100px;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(31, 30, 30);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    
+  }
+  
+  .active, .dot:hover {
+    background-color: #009e28;
+  }
+
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  .more:hover{
+    background-color: #009e28;
+  }
+  .more:active{
+      transform: scale(1.25);
+  }
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    width: 130px;
+    height: 42px;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #009e28;
+  }
+
+  input[type=submit]:active{
+    transform: scale(1.25);
+}
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    color: white;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .news-container{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    font-family: myraid pro regular;
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  a{
+    text-decoration: none; 
+    color: #000; 
+  }
+  a:hover{
+      font-size: 101%;
+      color: #009e28;
+  }
+
+  .linknew{
+
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    
+    z-index: 1;
+    
+    /* fixes overlap error in IE7/8, 
+        make sure you have an empty gif */
+    background-image: url('empty.gif');
+      
+  }
+
+  .ct-blog{
+      border-radius: 20px;
+  }
+
+  .recentNews .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+}
+.ct-blog-date{
+    margin: auto;
+}
+
+.recentNews .ct-blog {
+    margin-bottom: 50px;
+}
+
+.ct-blog .inner {
+    background-color: #e0e0e0;
+    padding: 30px;
+    transition: all 0.2s ease-in-out 0s;
+    height: 350px;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.ct-blog .fauxcrop {
+    height: 180px;
+    overflow: hidden;
+}
+
+.ct-blog .fauxcrop img {
+    width: 100%;
+}
+
+.ct-blog-content {
+    display: table;
+    padding: 30px 0 28px;
+}
+
+.ct-blog-content .ct-blog-date {
+    border-right: 2px solid #009e28;
+    display: table-cell;
+    font-family: "Lato", sans-serif;
+    padding: 0px 18px 0px 15px;
+    text-align: center;
+}
+
+.ct-blog-content .ct-blog-date span {
+    font-size: 16px;
+    color: #009e28;  
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+}
+
+.ct-blog-content .ct-blog-date strong {
+    font-size: 25px;
+    color: #009e28;  
+}
+
+.ct-blog-content .ct-blog-header {
+    color: #000;
+    display: table-cell;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    line-height: 1.1;
+    padding: 0 20px;
+    vertical-align: top;
+}
+
+.btn-news {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+li{
+    margin: 30px 0;
+    color:#2f2f2f;
+    font-family: calibri;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .p-style{
+    tab-size: 10px;
+  }

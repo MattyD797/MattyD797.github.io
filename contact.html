@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Personal Website</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <img src="images/background.PNG" alt="background" class="myback">
+    </head>
+
+    <body>
+        
+        <nav>
+            <span class="name">Matthew T. Duggan</span>
+            <ul>
+                <li><a href="index.html" class="link">Home</a></li>
+                <li><a href="about.html" class="link">About Me</a></li>
+                <li>
+                    <div class="dropdown" >
+                        <button class="dropbtn">Key Insights<i class="fa fa-coret-down"></i></button>
+                            <div class="dropdown-content" style="border-radius: 20px; background-color: white;">
+                                <a href="initiative.html">Initiative</a>
+                                <a href="leader.html">Leadership</a>
+                                <a href="collaborate.html">Collaboration</a>
+                              </div>
+                        
+                    </div>
+                </li>
+                <li><a href="leadership.html" class="link">Leadership</a></li>
+                <li><a href="contact.html" class="link">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="container">
+            <form action="action_page.php">
+          
+              <label for="name">Name*</label>
+              <input type="text" id="fname" name="firstname" placeholder="">
+
+              <label for="email">Email Address*</label>
+              <input type="text" id="email" name="email" placeholder="">
+
+              <label for="lname">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="">
+          
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="" style="height:100px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+    </body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Personal Website</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <img src="images/background.PNG" alt="background" class="myback">
+        <script>
+            var slideI = 1;
+            showSlides(slideI);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideI += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideI = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideI = 1}
+            if (n < 1) {slideI = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideI-1].style.display = "block";
+            dots[slideI-1].className += " active";
+            }
+            
+        </script>
+    </head>
+
+    <body onload="showSlides(1)">
+        <section style="background-image: url(images/whale.JPG); ">
+
+            <nav>
+                <span class="name">Matthew T. Duggan</span>
+                <ul>
+                    <li><a href="index.html" class="link">Home</a></li>
+                    <li><a href="about.html" class="link">About Me</a></li>
+                    <li>
+                        <div class="dropdown" >
+                            <button class="dropbtn">Key Insights<i class="fa fa-coret-down"></i></button>
+                                <div class="dropdown-content" style="border-radius: 20px; background-color: white;">
+                                    <a href="initiative.html">Initiative</a>
+                                    <a href="leader.html">Mentorship</a>
+                                    <a href="collaborate.html">Collaboration</a>
+                                  </div>
+                            
+                        </div>
+                    </li>
+                    <li><a href="leadership.html" class="link">Leadership</a></li>
+                    <li><a href="contact.html" class="link">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <div class="text-container" style="position: absolute;">
+                <p></p>
+                <p>Leadership</p>
+                <p>Can we talk to fish? <br> <span style="font-style: italic;padding: 30px;">"blurp blurp blurp" means "I sure hope so"</span> </p>
+            </div>
+            
+            <div class="content-p" style="width: 70%; margin-left: auto; margin-top: 400px;">
+                <h2 style="margin-left: 100px;">Background</h2>
+                <p>
+                    &nbsp&nbsp&nbsp&nbspWhile at South Carolina, I have been involved with several laboratories off and on campus with diverse 
+                    and different missions. I have integrated my own mission to implement strong computational applications into empirical ecology 
+                    projects while producing products in the form of presentations, publications, and repositories. I often recognize a pattern 
+                    of difficulty in balancing the fields of theoretical and empirical ecology, but have a strong desire to continue constructing 
+                    this necessary bridge. I find it necessary for someone with my diverse interests to expand myself past a defined ecological problem, 
+                    but challenge myself in model construction across a diverse set of data types and ecological scenarios. 
+                </p>
+                <h2 style="margin-left: 100px;">Problem Statement</h2>
+                <p>
+                    &nbsp&nbsp&nbsp&nbsp As offshore energy expands across the U.S. exclusive economic zone, federal regulatory agencies and industry 
+                    are using rapidly advancing sensing technologies for environmental compliance under NEPA and protected species mitigation. Passive 
+                    acoustic monitoring (PAM) has become a significant contributor to the success of marine protected species by providing an autonomous 
+                    platform for evaluating dynamic stressors. However, remote sensing approaches like PAM are inhibited in identifying species-specific 
+                    fish vocalizations.
+                </p>
+                <h2 style="margin-left: 100px;">Problem Solution</h2>
+                <p> &nbsp&nbsp&nbsp&nbspAudio-video classification of species offers a solution but has been limited to the sample of fish that vocalize in direct sight of a 
+                    standard camera. Utilizing a first-of-its-kind system of surround video and a compact acoustic array, I will identify the source of 
+                    the sounds in the marine soundscape and visually classify the species. The addition of visual confirmation will identify the sound 
+                    source of specific bioacoustic events, such that those acoustic events can later be used for evaluating ecosystem health from 
+                    longer-term PAM surveys. To limit observational bias, enhance efficiency, and identify multidimensional relationships on fish acoustic 
+                    behavior, a convolutional neural network (CNN) ensemble would classify species of interest and pair specific vocalizations. Thus, fish
+                     communication would become an autonomous means in inferring relationships with potential vulnerabilities on coastal ecosystems. These 
+                     vulnerabilities include increasing water temperatures, development of offshore infrastructure, disease proliferation, and congested 
+                     shipping lanes. Furthermore, as species and their sounds are discovered, the construction of sound libraries will revolutionize the 
+                     evaluation of PAM to the resolution of species.</p>
+                <h2 style="margin-left: 100px;">Implementation</h2>
+
+                <div class="slideshow-container">
+                    <div class = "mySlides fade">
+                        
+                        <div class="about-container"> 
+                            
+                            <img src="images/housing.png" style = "height: 350px;padding-left: 40px;">  
+                            <div >
+                                <p style = "padding-top: 30px;font-weight:bold;font-family: myraid pro;">1. Improve Constructed System of Surround Video and Compact Acoustic Array</p>
+                                <p style = "padding-top: 30px;">
+                                   Testing of the system will be undertaken in a pool to adjust any malfunctions or bugs in the system. This includes water proofing the 
+                                   electrical system and ensuring a full range of view is obtainable. Additionally, this is when a procedure for setting down this device will
+                                   be established as to deminish habitat disturbance. Refer to the figure for information of the system's design. 
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class = "mySlides fade">
+                        <div class="key-container">
+                            <div >
+                                <p style = "padding-top: 30px;font-weight:bold;font-family: myraid pro;">2. Select Locations for Testing and Data Collection</p>
+                                <p style = "padding-top: 30px;">
+                                   Find possible testing locations for the system by investigating areas of ecological importance and a suspected high diversity of 
+                                   fish vocalizations, for example coral reef systems or windmills producing renewable energy. Start creating data libraries of combined
+                                   video and bioacoustic data for large data storage. 
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class = "mySlides fade">
+                        
+                        <div class="about-container">
+                            <div >
+                                <p style = "padding-top: 30px;font-weight:bold;font-family: myraid pro;">3. Construct a Model to Identify Fish Species in Video</p>
+                                <p style = "padding-top: 30px;">
+                                    Let data collect over the year to allow ample time to build a strong foundation in the database construction and generalization. 
+                                    This will give me a well rounded data base to create a model that can autonomously identify species in video
+                                    and localize audio data to possible vocalizations. Model type may be experimental, but I will initially try a type of convolutional neural 
+                                    network model ensemble.  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "mySlides fade">
+                        
+                        <div class="about-container">
+                            <div >
+                                <p style = "padding-top: 30px;font-weight:bold;font-family: myraid pro;">4. Build Sound Libraries of Fish Vocalizations</p>
+                                <p style = "padding-top: 30px;">
+                                    After model construction, I can store a library of known fish vocalizations to specific species. This library synthesis can then be transferred
+                                    to spin off studies and be utilized in expanding the libraries. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "mySlides fade">
+                        
+                        <div class="about-container">
+                            <div >
+                                <p style = "padding-top: 30px;font-weight:bold;font-family: myraid pro;">5. Extrapolate Sound Libraries to Passive Acoustic Monitor Data</p>
+                                <p style = "padding-top: 30px;">
+                                    Since acoustic data has been collecting for a long time, we can further investigate the health of an ecosystem by matching sounds to specific fish species. 
+                                    This can help us to identify fish occupancy and estimate abundance without visual confirmation in remote or high turbidity areas. An important tool
+                                    for conservation organizations looking for a dynamic method to assess ecosystem health. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class = "mySlides fade">
+                        
+                        <div class="about-container">
+                            <div >
+                                <p style = "padding-top: 30px;font-weight:bold;font-family: myraid pro;">6. Expand and Repeat Study to New Areas</p>
+                                <p style = "padding-top: 30px;">
+                                    Because we would only have fish in the environemtn where we initially tested and developed this method, we will have to expand this system to other environments. 
+                                    This could lead to new key stone species being identified in determine environmental health and would be an important tool in identifying new anthropogenic marine initiative 
+                                    effects. This includes shipping, energy development, and fishing that results in disease proliferation and population declines. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)" style="color: black;">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)" style="color: black;">&#10095;</a>
+                </div>
+                <!-- The dots/circles -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+
+                <h2 style="margin-left: 100px;">Significance</h2>
+
+                <p>
+                    Upon successful CNN construction and matching biological sounds to identified species, fish bioacoustics could revolutionize our understanding of 
+                    ecological stressors, such as mitigating impacts of renewable energy development on coastal ecosystems. Inferring acoustic communication events provides 
+                    management organizations with the tools to quickly adapt to vulnerabilities that have significant economic and environmental impacts on our nation.
+
+                </p>
+            </div>
+           
+        </section>
+        <div style = "margin-top:80%; height: 30px;">
+        
+        </div>
+    </body>
+</html>

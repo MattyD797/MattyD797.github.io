@@ -1,0 +1,290 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+    <head>
+<<<<<<< HEAD
+        <meta charset="utf-8">
+        <title>Personal Website</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <img src="images/background.PNG" alt="background" class="myback">
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+            
+        </script>
+
+
+    </head>
+    <body onload="showSlides(1)">
+      
+        <section style="background-image: url(images/boat.png);">
+            
+            <nav>
+                <span class="name">Matthew T. Duggan</span>
+                <ul>
+                    <li><a href="index.html" class="link">Home</a></li>
+                    <li><a href="about.html" class="link">About Me</a></li>
+                    <li>
+                        <div class="dropdown" >
+                            <button class="dropbtn">Key Insights<i class="fa fa-coret-down"></i></button>
+                                <div class="dropdown-content" style="border-radius: 20px; background-color: white;">
+                                    <a href="initiative.html">Initiative</a>
+                                    <a href="leader.html">Mentorship</a>
+                                    <a href="collaborate.html">Collaboration</a>
+                                  </div>
+                            
+                        </div>
+                            
+                        </div>
+                    </li>
+                    
+                    
+                    <li><a href="leadership.html" class="link">Leadership</a></li>
+                    <li><a href="contact.html" class="link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="text-container" >
+                <p>Welcome,</p>
+                <p>I'm Matt</p>
+                <p>I am a Computational Ecologist <br> <span style="font-style: italic;font-weight: bold;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp & Data Scientist</span></p>
+                <a href="contact.html">
+                <button class="hire-btn">CONTACT</button></a>
+                <a href="docs/CV_Duggan.pdf" download="CV_Duggan">
+                <button class="down-cv">DOWNLOAD CV</button>
+                </a>
+            </div>
+
+            
+        </section>
+
+        <div class="slideshow-container">
+            <div class = "mySlides fade">
+                
+                <div class="about-container">     
+                    <img src="images/jeep.png">
+                    <div class="about-text">
+                        <p>About Me</p>
+                        <p>Graduation with Leadership Distinction in Research</p>
+                        <p>
+                            Hello, my name is Matt Duggan. I am a dual degree undergraduate in Biological and Computer Science
+                            in the Honors College at the University of South Carolina.  
+                        </p>
+                        <p>
+                            I aspire to earn a Ph.D. related to Computational Biology. My research will continue developing the bond between 
+                            ecological and computational biology, focusing on the link between fauna behavior and human pressures.
+                        </p>
+                        <p>
+                            Throughout my page, I hope to demonstrate my growing passion to study our natural world and how my experiences at
+                            UofSC shaped these interests. 
+                        </p>
+                        <a href="about.html" class="link"><button class="more">More</button></a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class = "mySlides fade">
+                <div class="key-container">
+                    <img src="images/T1D.png">
+                    <div class="about-text">
+                        <p>Key Insights</p>
+                        <p>At UofSC I learned to...</p>
+                        <p style="margin-top: 20px;">
+                            <br>
+                                <a href="initiative.html" class="link"><button class="more">Take Initiative</button></a>
+                                <a href="leader.html" class="link"><button class="more">Be a Leader</button></a>
+                                <a href="collaborate.html" class="link"><button class="more">Collaborate</button></a>
+                            
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class = "mySlides fade">
+                
+                <div class="leadership-container">
+                    <img src="images/kite2.JPG">
+                    <div class="about-text">
+                        <p>Leadership</p>
+                        <p>Into the Future: Graduate School</p>
+                        <p>
+                            I have always been infatuated with wildlife and I want to understand, and hopefully slow, 
+                            the mass biodiversity decline around the world. Being tenaciously independent, learning from 
+                            past failures, and discovering global links that influence the world’s ecosystems, I am motivated 
+                            to broaden my skill sets into biology and computer science to provide a unique perspective into my graduate 
+                            studies. 
+                        </p>
+                        <p>
+                            In more detail, I describe my most recent project proposal for Ph.D. study that addresses how we could mitigate
+                            our impact on the marine ecosystem by listening to fish. This proposal will plan to study the state of our most 
+                            vulnerable water systems, including estuaries and coral reefs. 
+                        </p>
+                        <a href="leadership.html" class="link"><button class="more">More</button></a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="news-container">
+            <p style="font-size: 50px;">Recent News</p>
+            <p style="margin-top: -50px;font-style: italic;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp& Interesting Studies</p>
+            <section class="recentNews">
+                
+                <div class="row" style="position: absolute;">
+                        
+                    <div class="ct-blog">
+                        
+                            <div class="inner">
+                                <div class="fauxcrop">
+                                    <a href="#"><img alt="News Entry" src="https://www.sciencenews.org/wp-content/uploads/2022/01/011922_so_baleen-whales_feat-1380x776.jpg"></a>
+                                </div>
+                                <div class="ct-blog-content">
+                                    
+                                    <div class="ct-blog-date">
+                                        <span>January</span><strong>20</strong>
+                                    </div>
+                                    <h3 class="ct-blog-header">
+                                        <a href="https://www.sciencenews.org/article/fin-whale-eat-choke-baleen-oral-plug-muscle-fat#:~:text=A%20plug%20made%20of%20muscle,mouths%20might%20offer%20a%20clue.&text=The%20plug%20appears%20to%20prevent,January%2020%20in%20Current%20Biology.">
+                                    A ‘trapdoor’ made of muscle and fat helps fin whales eat without choking</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        
+                        
+                    </div>
+            
+                    <div class="ct-blog">
+                        <div class="inner">
+                            <div class="fauxcrop">
+                                <a href="#"><img alt="News Entry" src="https://www.sciencenews.org/wp-content/uploads/2022/01/011822_jb_tiny-beetle_feat-1380x776.jpg"></a>
+                            </div>
+                            <div class="ct-blog-content">
+                                <div class="ct-blog-date">
+                                    <span>January</span><strong>19</strong>
+                                </div>
+                                <h3 class="ct-blog-header">
+                                    <a href="https://www.sciencenews.org/article/beetle-fly-fast-wing-bristles-stroke-tiny-featherwing#:~:text=Featherwing%20beetles%20are%20some%20of%20the%20world's%20smallest%20flying%20insects.&text=A%20wide%20wing%20stroke%20combined,online%20January%2019%20in%20Nature.">
+                                    These tiny beetles fly fast thanks to wing bristles and a weird, wide stroke</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ct-blog">
+                        <div class="inner">
+                            <div class="fauxcrop">
+                                <a href="#"><img alt="News Entry" src="https://www.sciencenews.org/wp-content/uploads/2022/01/011221_JB_fish-colony_feat-1380x776.jpg"></a>
+                            </div>
+                            <div class="ct-blog-content">
+                                <div class="ct-blog-date">
+                                    <span>January</span><strong>13</strong>
+                                </div>
+                                <h3 class="ct-blog-header">
+                                    <a href="https://www.sciencenews.org/article/ice-fish-nest-antarctica-breeding-colony-largest-group#:~:text=Five%20hundred%20meters%20below%20the,the%20size%20of%20Orlando%2C%20Fla.">
+                                    The largest group of nesting fish ever found lives beneath Antarctic ice</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ct-blog">
+                        <div class="inner">
+                            <div class="fauxcrop">
+                                <a href="#"><img alt="News Entry" src="https://www.sciencenews.org/wp-content/uploads/2022/01/010722_MT_driving-fish_feat-1380x776.jpg"></a>
+                            </div>
+                            <div class="ct-blog-content">
+                                <div class="ct-blog-date">
+                                    <span>January</span><strong>10</strong>
+                                </div>
+                                <h3 class="ct-blog-header">
+                                    <a href="https://www.sciencenews.org/article/goldfish-car-drive-navigation-biology#:~:text=This%20goldfish%20knows%20how%20to,explore%20even%20in%20unfamiliar%20habitats.&text=By%20the%20end%20of%20driver's,direct%20routes%20to%20their%20goal.">
+                                    Here’s what goldfish driving ‘cars’ tell us about navigation</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ct-blog">
+                        <div class="inner">
+                            <div class="fauxcrop">
+                                <a href="#"><img alt="News Entry" src="https://www.sciencenews.org/wp-content/uploads/2022/01/010722_CG_hedgehog_feat-1380x776.jpg"></a>
+                            </div>
+                            <div class="ct-blog-content">
+                                <div class="ct-blog-date">
+                                    <span>January</span><strong>7</strong>
+                                </div>
+                                <h3 class="ct-blog-header">
+                                    <a href="https://www.sciencenews.org/article/drug-resistant-bacteria-hedgehog-mrsa#:~:text=Fungi%20on%20the%20animals%20produce,a%20type%20of%20MRSA%20superbug.">
+                                    Drug-resistant bacteria evolved on hedgehogs long before the use of antibiotics</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ct-blog">
+                        <div class="inner">
+                            <div class="fauxcrop">
+                                <a href="#"><img alt="News Entry" src="https://www.sciencenews.org/wp-content/uploads/2021/12/121521_JC_spider-gecko_feat-1380x776.jpg"></a>
+                            </div>
+                            <div class="ct-blog-content">
+                                <div class="ct-blog-date">
+                                    <span>January</span><strong>4</strong>
+                                </div>
+                                <h3 class="ct-blog-header">
+                                    <a href="https://www.sciencenews.org/article/spider-gecko-earth-hottest-landscape#:~:text=Migrating%20insects%20are%20key%20to,mostly%20feed%20on%20migrating%20insects.">
+                                    Here’s how spider geckos survive on Earth’s hottest landscape</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+        
+
+    </body>
+</html>
+
