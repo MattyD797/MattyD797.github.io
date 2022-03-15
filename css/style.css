@@ -5,10 +5,14 @@ body{
     margin: 0px;
     padding-bottom: 150px;
 }
+
+
+
 .myback {
     min-width: 1600px;
     position: fixed;
     height: 100%;
+    width: 100%;
     object-fit: cover;
     z-index: -2;
 }
